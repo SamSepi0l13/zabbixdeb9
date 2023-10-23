@@ -3,7 +3,7 @@ echo "Instalando o Agente Zabbix no Debian 9..."
 
 # Adicionar o repositório do Zabbix e atualizar o sistema no Debian 9
 echo "Adicionando o repositório do Zabbix e atualizando o sistema no Debian 9..."
-wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_6.4-1+debian9_all.deb
+wget --no-check-certificate https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_6.4-1+debian9_all.deb
 dpkg -i zabbix-release_6.4-1+debian9_all.deb
 apt update
 
